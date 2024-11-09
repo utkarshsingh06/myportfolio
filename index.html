@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
   <!-- Google Tag Manager -->
@@ -756,7 +756,97 @@
       background-position-x: 30%;
     }
   }
-  </style>
+  
+/* Responsive Adjustments */
+
+/* Fix padding and margins for mobile */
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  main {
+    padding-left: 0 !important;
+    padding-top: 20px;
+  }
+
+  .myimages {
+    width: 90%;
+    height: auto;
+    position: relative;
+    right: 0;
+    top: 0;
+    margin: 20px auto;
+  }
+
+  .myimages img {
+    width: 100%;
+    height: auto;
+    left: 0;
+    transform: translateX(0);
+  }
+
+  .social, .buttons {
+    text-align: center;
+  }
+
+  .social a, .buttons a {
+    margin: 5px;
+    display: inline-block;
+  }
+
+  .card .card-content {
+    padding: 10px;
+  }
+
+  .card .card-title {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 22px;
+    padding: 10px;
+  }
+}
+
+/* Adjust Side Navigation Width */
+@media only screen and (max-width: 600px) {
+  ul.side-nav {
+    width: 150px;
+  }
+
+  .button-collapse {
+    display: block;
+  }
+}
+
+/* Set responsive image handling */
+img.responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fix navigation header for mobile */
+@media only screen and (max-width: 992px) {
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .name-title {
+    padding-top: 10px;
+  }
+
+  main {
+    padding-top: 80px;
+  }
+}
+
+</style>
 </head>
 
 <body>
