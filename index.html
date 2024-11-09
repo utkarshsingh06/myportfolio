@@ -846,6 +846,31 @@ img.responsive-img {
   }
 }
 
+
+/* Enhanced Side Navigation for Desktop Mode on Mobile */
+@media only screen and (max-width: 992px) {
+  ul.side-nav.fixed {
+    position: static;
+    width: 100%;
+    padding: 0;
+    box-shadow: none;
+    background-color: transparent;
+  }
+  ul.side-nav.fixed > li {
+    display: inline-block;
+    width: auto;
+  }
+}
+
+/* Fix padding-left for main content in small screens */
+@media only screen and (max-width: 992px) {
+  main {
+    padding-left: 0 !important;
+    padding-top: 64px;
+    width: 100%;
+  }
+}
+
 </style>
 </head>
 
